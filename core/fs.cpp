@@ -1,6 +1,8 @@
 //handles fs calls
 #include <fs.hpp>
 #include <stdint.h>
+#include <iostream>
+#include <fstream>
 
 #if __cplusplus >= 201703L
 #include <filesystem>
@@ -66,6 +68,12 @@ std::vector<std::string> fsClass::listFoldersInDir(std::string path) {
         if (isFolder(path + "/" + file)) {newFiles.push_back(file);}
     }
     return newFiles;
+}
+
+std::fstream fsClass::openFile(std::string path) {
+    std::fstream file(path, std::ios::in | std::ios::out | std::ios::binary);
+    if (!file) {exit(-1);}
+    return file;
 }
 #else
 #error no suitable fs backend could be compiled, try adding c++17 extensions to the CCFLAGS or porting/creating a new backend

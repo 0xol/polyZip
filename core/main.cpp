@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fs.hpp>
+#include <tar.hpp>
 
 int main(int argc, char *argv[]) {
     
@@ -24,6 +25,8 @@ int main(int argc, char *argv[]) {
     for (const auto folder : fs.listFoldersInDir(".")) {
         std::cout << "Found folder: " << folder << std::endl;
     }
+
+    tar.openTar("test.tar");
 
     return 0;
 }

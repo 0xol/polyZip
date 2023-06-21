@@ -1,0 +1,52 @@
+Does polyZip.exe exist: 1
+Is polyZip.exe a file: 1
+Is polyZip.exe a folder: 0
+.\.git
+.\.gitignore
+.\.vscode
+.\bin
+.\config.py
+.\core
+.\fart
+.\include
+.\LICENSE
+.\make.py
+.\makefile
+.\out
+.\polyZip.exe
+.\README.md
+.\test.tar
+.\__pycache__
+Searching for .exe files: FOUND .\polyZip.exe
+Found file: .\.gitignore
+Found file: .\config.py
+Found file: .\fart
+Found file: .\LICENSE
+Found file: .\make.py
+Found file: .\makefile
+Found file: .\out
+Found file: .\polyZip.exe
+Found file: .\README.md
+Found file: .\test.tar
+Found folder: .\.git
+Found folder: .\.vscode
+Found folder: .\bin
+Found folder: .\core
+Found folder: .\include
+Found folder: .\__pycache__
+Header name: test_folder/
+Mode: 0000755
+UID: 0601751
+GID: 0601001
+Size: 00000000000
+Mtime: 14444175462
+Checksum: 011227
+Typeflag: 5
+Linkname: 
+Magic: ustar  
+Version:  
+Uname: oxol
+Gname: 
+Devmajor: 
+Devminor: 
+Prefix: 

@@ -2,6 +2,8 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
+#include <fstream>
 
 class fsClass {
     public:
@@ -13,5 +15,7 @@ class fsClass {
         std::vector<std::string> listFilesInDirByFileExtension(std::string path, std::string fileExtension);
         std::vector<std::string> listFilesInDir(std::string path);
         std::vector<std::string> listFoldersInDir(std::string path);
+
+        std::fstream openFile(std::string path);
 };
 extern fsClass fs;
